@@ -26,7 +26,7 @@ var abc = 1; //변수 호이스팅 되어 위로 올라간다
 // 따라서 대부분 값의 할당은 상수로 선언된다.
 
 const ef = 10; //호이스팅 안된다. 재할당 불가능
-console.log(ef);
+// console.log(ef);
 
 ef = 20;
 console.log(ef);
