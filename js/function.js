@@ -10,15 +10,15 @@
 
 // 정의부
 function printNm(name) {
- // console.log(name);
+  // console.log(name);
 }
 
 // 호출부
 printNm('창호');
 
 function sum(a, b) {
- // 형식 파라미터
- return a + b;
+  // 형식 파라미터
+  return a + b;
 }
 
 // console.log(sum(5, 9)); // 실제 파라미터
@@ -26,12 +26,12 @@ document.write(sum(6, 2));
 
 // n층짜리 별탑 찍기
 function stackTop(a) {
- for (let i = 0; i < a; i++) {
-   for (let j = 0; j < i; j++) {
-     document.write('*');
-   }
-   document.write('<br>');
- }
+  for (let i = 0; i < a; i++) {
+    for (let j = 0; j < i; j++) {
+      document.write('*');
+    }
+    document.write('<br>');
+  }
 }
 
 stackTop(20);
@@ -39,12 +39,12 @@ stackTop(20);
 // console.log(sumNum(100));
 // 누적 합계
 function sumNum(a) {
- let sum = 0;
- for (let i = 1; i <= a; i++) {
-   // console.log(i);
-   sum += i;
- }
- return sum;
+  let sum = 0;
+  for (let i = 1; i <= a; i++) {
+    // console.log(i);
+    sum += i;
+  }
+  return sum;
 }
 
 // - 함수의 이름 식별자는 동사 형태로 작성한다 : ex) eventListener, startSlide...
@@ -70,12 +70,12 @@ function sumNum(a) {
 
 // - 익명함수 실행 방법 1 : 즉시 실행 함수
 (function () {
- // console.log('즉시 실행 함수');
+  // console.log('즉시 실행 함수');
 })();
 
 // - 익명함수 실행 방법 2 : 변수 대입
 const noNameFunc = function () {
- // console.log('변수 대입 익명함수');
+  // console.log('변수 대입 익명함수');
 };
 
 noNameFunc();
@@ -85,9 +85,9 @@ noNameFunc();
 // - 매개변수는 기본적으로 선언시 개수와 정의시 개수가 같은게 일반적이다.
 // - 하지만 개수가 다르더라도 오류가 나지는 않지만 남는 매개변수는 undefined로 할당된다.
 function overParams(a, b, c) {
- // console.log(a);
- // console.log(b);
- // console.log(c);
+  // console.log(a);
+  // console.log(b);
+  // console.log(c);
 }
 
 // overParams(3, 5, 7, 9);
@@ -100,24 +100,24 @@ function overParams(a, b, c) {
 // - signiture : function fName(...rest parameter) {}
 // - 나머지 매개변수는 배열 형태로 리턴된다.
 function restParams(...a) {
- return a;
+  return a;
 }
 
 // console.log(restParams(1, 2, 3, 4, 5));
 
 // - 최솟값 찾기
 function min(...items) {
- // console.log(items);
- // 1 배열값 반복문으로 추출
- let output = items[0];
- for (let i = 0; i < items.length; i++) {
-   // console.log(items[i]);
-   if (output > items[i]) {
-     output = items[i];
-   }
-   // console.log(output);
- }
- return output;
+  // console.log(items);
+  // 1 배열값 반복문으로 추출
+  let output = items[0];
+  for (let i = 0; i < items.length; i++) {
+    // console.log(items[i]);
+    if (output > items[i]) {
+      output = items[i];
+    }
+    // console.log(output);
+  }
+  return output;
 }
 
 // 호출 시 4, 3, 5, 7
@@ -130,24 +130,24 @@ console.log(min(4, 3, 5, 7, 2));
 // 콜백 함수는 이벤트를 실행하는 addEventListener 또는 배열을 다루는 forEach, map, filter 등에 활용되는 중요한 방식이다(DOM, ArrayFunction)
 // 또한 promise와 같은 비동기 메서드에서도 활용된다
 function callFunc(callback) {
- callback(7);
+  callback(7);
 }
 
 callFunc(function (a) {
- console.log(a);
+  console.log(a);
 });
 
 // 7. 화살표 함수
 // - 화살표 함수는 es6부터 제공되는 함수 작성 방식이다.
 general(5);
 function general(a) {
- console.log('일반함수');
- console.log(a);
+  console.log('일반함수');
+  console.log(a);
 }
 
 const arrFunc = (b) => {
- console.log('화살표 함수');
- console.log(b);
+  console.log('화살표 함수');
+  console.log(b);
 };
 
 arrFunc(4);
