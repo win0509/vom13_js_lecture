@@ -32,7 +32,7 @@ fetch('https://yts.mx/api/v2/list_movies.json?limit=5&sort_by=year')
 
 
 
-  // const product = document.querySelectorAll('.movie');
+  // //const product = document.querySelectorAll('.movie');
 
   // const getProductData = async () => {
   //  await fetch('https://yts.mx/api/v2/list_movies.json?limit=5&sort_by=year')
